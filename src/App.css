@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+a {
+    text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+    list-style-type: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* header */
+.header .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e74c3c;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.header .menu .menu-item a {
+    display: inline-block;
+    color: #e74c3c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .menu .menu-item a box-icon {
+    width: 40px;
+    height: 40px;
 }
+
+.header .menu .menu-item {
+    font-size: 1.5rem;
+    display: inline-block;
+}
+/* end header */
+
+/* main */
+.main {
+    padding: 100px 0;
+}
+
+.img-prod img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.info-prod {
+    padding: 1rem;
+}
+
+.info-prod h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.info-prod span {
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.info-prod button {
+    border: none;
+    background: #e74c3c;
+    padding: .5rem;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Poppins';
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+/* end main */
+
+/* cart */
+.cart {
+    padding-bottom: 100px;
+}
+
+.cart-table {
+    width: 100%;
+}
+
+.cart-table thead tr {
+    background: #2c3e50;
+    color: #fff;
+
+}
+
+.cart-table thead tr th {
+    padding: .5rem;
+}
+
+.cart-table tbody tr td {
+    padding: 1rem;
+}
+
+.cart-table tbody tr td.prod-thumbnail {
+    width: 150px;
+}
+
+.cart-table tbody tr td.prod-thumbnail img {
+    width: 100%;
+    display: block;
+}
+
+.cart-table tbody tr td.prod-quantity div:first-of-type {
+    display: flex;
+    align-items: center;
+}
+
+.cart-table tbody tr td.prod-quantity span {
+    padding: 1rem;
+}
+
+.cart-table tbody tr td.prod-quantity div.btn-change-quantity {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-table tbody tr td.prod-quantity div.btn-change-quantity button {
+    border: none;
+    display: inline-block;
+    padding: .8rem;
+    font-family: 'Poppins';
+    width: 100%;
+}
+
+.cart-table tbody tr td.prod-remove {
+    text-align: center;
+}
+/* end cart */
+
+/* cart total */
+.cart-total {
+    background: #ecf0f1;
+}
+
+h3.cart-total_title {
+    font-weight: 600;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-total_info {
+    padding: 1rem;
+}
+
+.subtotla {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.subtotla span:first-child {
+    width: 40%;
+}
+
+.subtotla span:last-child {
+    width: 60%;
+}
+
+.shipping {
+    padding-bottom: 1rem;
+}
+
+.shipping_title {
+    padding-bottom: .5rem;
+}
+
+.shipping-content {
+    padding-left: 2rem;
+}
+
+.shipping-content input {
+    margin-right: .8rem;
+}
+
+.free-shipping {
+    padding-bottom: .5rem;
+}
+
+.total {
+    display: flex;
+}
+
+.total span:first-child {
+    width: 40%;
+}
+
+.total span:last-child {
+    width: 60%;
+    font-weight: 600;
+    color: #e74c3c;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* end cart total */
